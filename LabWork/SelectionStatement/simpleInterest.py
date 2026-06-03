@@ -2,7 +2,7 @@
 print("-----------Simple Interest--------------")
 principle=float(input("Enter principle amount: "))
 rate=float(input("Enter rate(%): "))
-time=float(input("Enter Time(in years)"))
+time=int(input("Enter Time(in years)"))
 #----------------Print-----------------------
 print("Principle=",principle)
 print("Rate=",rate)
