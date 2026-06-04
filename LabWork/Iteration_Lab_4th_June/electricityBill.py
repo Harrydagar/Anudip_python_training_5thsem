@@ -1,30 +1,34 @@
-# Calculate electricity bill based on the following slab rates: 
-# Units Rate 
-# 0-100 ₹5/unit 
-# 101-200 ₹7/unit 
-# Above 200 ₹10/unit 
-# Display: 
-# • Units Consumed  
-# • Total Bill  
-# • Category (Low / Medium / High Consumption)  
+# Electricity Bill Calculator using Slab Rates
 
-units=int(input("Enter Electricity Unit: "))
-if(units<0):
-    exit("Units can't be in negative")
-bill=0
-if(units>0 or units<100):
-    bill=units*5
-    category="low"
-elif(units>100  or units<201):
-    bill=units*7
-    category="Medium"
+# units consumed
+units = int(input("Enter Electricity Unit: "))
+
+# Validation
+if units < 0:
+    exit("Units can't be negative")
+
+#Bill calc
+
+
+if units <= 100:
+    bill = units * 5
+    category = "Low"
+
+#Now starting 100 unit calc as 5 rs and next with 7 rs
+elif units <= 200:
+    bill = (100 * 5) + ((units - 100) * 7)
+    category = "Medium"
+#Same logic here start 100*5 then next 100*7 then other *10
 else:
-    bill=units*10
-    category="High consumption"
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
+    category = "High"
 
-print("Units Consumed:",units)
-print("Total bill:",bill)
-print("Category:",category)    
+# Output
+
+print("\n----- Electricity Bill -----")
+print("Units Consumed :", units)
+print("Total Bill : ₹", bill)
+print("Category :", category)
 
 
 
