@@ -1,9 +1,11 @@
 
 # Accept a number from the user and check whether it is an Armstrong Number.
 user_input=int(input("Input:"))
+#og=original
 og=user_input
 power=len(str(user_input))
 sum=0
+#cheaking Armstrong
 while(user_input>0):
     num=user_input%10
     sum+=num**power
