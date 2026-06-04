@@ -5,6 +5,8 @@ original_pass=1234
 
 while(True):
     user_input=int(input("Enter Pin: "))
+    if(len(user_input)>4 or len(user_input)<4):
+        print("Pin must be of length 4")
     if(user_input==1234):
         print("Access Granted.")
         break
