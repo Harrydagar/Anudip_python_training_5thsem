@@ -1,6 +1,6 @@
 # ATM Simulation System
 
-# Initial balance in the account
+# Initial balance
 balance = 10000
 
 # Infinite loop to keep showing the menu
