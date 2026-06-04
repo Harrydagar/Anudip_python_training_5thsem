@@ -6,13 +6,13 @@ absent_count=0
 while(student_count<=30):
     attendence=input("Say yes/no: ").lower()
     if(attendence=="yes"):
-        print("Student",student_count, "Entered")
-        print("Student :",student_count,"Present")
+        print("Student",student_count)
+        print("Attendence:","Present")
         present_count+=1
         student_count+=1
     elif(attendence=="no"):
-        print("Student",student_count, "Entered")
-        print("Student",student_count, "Absent")
+        print("Student",student_count)
+        print("Attendence:" "Absent")
         absent_count+=1
         student_count+=1
     else:
