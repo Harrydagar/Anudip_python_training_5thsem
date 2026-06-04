@@ -3,7 +3,6 @@
 
 user_input=int(input("Input:"))
 og=user_input
-power=len(str(user_input))
 fact=1
 sum=0
 while(user_input>0):
