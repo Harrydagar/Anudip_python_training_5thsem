@@ -1,0 +1,60 @@
+# Employee records stored in tuple
+employees = (
+    ("E101", "Anuj", 92),
+    ("E102", "Rahul", 76),
+    ("E103", "Priya", 58),
+    ("E104", "Neha", 88),
+    ("E105", "Amit", 45)
+)
+
+print("Employees Scoring 80 or Above:")
+
+# Initialize variables
+improvement = 0
+high_performers = []
+
+# Assume first employee has highest score
+highest = employees[0]
+
+# Process employee records
+for emp in employees:
+
+    # Display employees scoring 80 or above
+    if emp[2] >= 80:
+        print(emp[0], emp[1], emp[2])
+
+    # Count employees needing improvement
+    if emp[2] < 60:
+        improvement += 1
+
+    # Find highest performer
+    if emp[2] > highest[2]:
+        highest = emp
+
+    # Create list of employees scoring above 75
+    if emp[2] > 75:
+        high_performers.append(emp[1])
+
+print("Employees Needing Improvement:", improvement)
+
+print("Highest Performer:")
+print(highest[0], highest[1], highest[2])
+
+print("High Performers:")
+print(high_performers)
+
+print("Performance Categories:")
+
+# Display performance category
+for emp in employees:
+
+    if emp[2] >= 90:
+        category = "Excellent"
+    elif emp[2] >= 75:
+        category = "Good"
+    elif emp[2] >= 60:
+        category = "Average"
+    else:
+        category = "Needs Improvement"
+
+    print(emp[1], "->", category)
