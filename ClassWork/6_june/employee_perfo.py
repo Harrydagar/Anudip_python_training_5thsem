@@ -1,3 +1,28 @@
+"""
+Question 1: Employee Performance Evaluation
+Problem Statement
+A company stores employee details in a tuple. Each employee record contains:
+employees = ( ("E101", "Anuj", 92), ("E102", "Rahul", 76), ("E103", "Priya", 58), ("E104", "Neha", 88), ("E105", "Amit", 45) )
+
+Where:
+• First value = Employee ID
+• Second value = Employee Name
+• Third value = Performance Score
+
+Tasks
+Write a Python program to:
+1. Display details of employees scoring 80 or above.
+2. Count the number of employees who need improvement (score below 60).
+3. Find the employee with the highest score.
+4. Create a list containing the names of all employees scoring above 75.
+5. Display the performance category for each employee:
+
+90 and above → Excellent
+75 to 89 → Good
+60 to 74 → Average
+Below 60 → Needs Improvement"""
+#----------------------------------------------------------------------------------------------------------------------
+
 # Employee records stored in tuple
 employees = (
     ("E101", "Anuj", 92),
