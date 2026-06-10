@@ -1,0 +1,10 @@
+Food,450
+Travel,300
+Shopping,1200
+Electricity,850
+Internet,700
+Entertainment,600
+Medicine,400
+Education,1500
+Fuel,900
+Miscellaneous,250
